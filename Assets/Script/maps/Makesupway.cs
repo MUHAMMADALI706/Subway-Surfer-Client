@@ -2265,25 +2265,25 @@ public class Makesupway : MonoBehaviour {
                 nameitem = "x2coin";
                 break;
             case 1:
-                nameitem = "giay";
+                //nameitem = "giay";
                 break;
             case 2:
                 nameitem = "hutcoin";
                 break;
             case 3:
-                nameitem = "baycoin";
+                //nameitem = "baycoin";
                 break;
             case 4:
-                nameitem = "baylongcoin";
+               // nameitem = "baylongcoin";
                 break;
             case 5:
-                nameitem = "key";
+               // nameitem = "key";
                 break;
             case 6:
-                nameitem = "box";
+               // nameitem = "box";
                 break;
             case 7:
-                nameitem = "van";
+               // nameitem = "van";
                 break;
             default:
                 break;
@@ -2309,6 +2309,7 @@ public class Makesupway : MonoBehaviour {
                 ManagerAllitem.Add(Instantiate(makeitemkey, tranformitem, transform.rotation) as GameObject);
                 break;
             case "box":
+
                 ManagerAllitem.Add(Instantiate(makeitembox, tranformitem, transform.rotation) as GameObject);
                 break;
             case "van":
@@ -2348,7 +2349,7 @@ public class Makesupway : MonoBehaviour {
     {
         for (int i = 0; i < hidecoin.Count; i++)
         {
-            hidecoin[i].SetActive(false);
+            //hidecoin[i].SetActive(false);
         }
         yield return new WaitForSeconds(0);
         for (int i = 0; i < ManagerAllcoin.Count; i++)

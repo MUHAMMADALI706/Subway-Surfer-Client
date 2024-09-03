@@ -138,9 +138,9 @@ public class managerdata : MonoBehaviour {
             PlayerPrefs.SetInt("nvchinh", 0);
             PlayerPrefs.Save();
         }
-        if (PlayerPrefs.HasKey("nvgirl") == false)
+        if (PlayerPrefs.HasKey("hero") == false)
         {
-            PlayerPrefs.SetInt("nvgirl", 1);
+            PlayerPrefs.SetInt("hero", 1);
             PlayerPrefs.Save();
         }
         if (PlayerPrefs.HasKey("nvgau") == false)
@@ -150,7 +150,7 @@ public class managerdata : MonoBehaviour {
         }
         if (PlayerPrefs.HasKey("nowcharacter") == false)
         {
-            PlayerPrefs.SetString("nowcharacter", "nvgirl");
+            PlayerPrefs.SetString("nowcharacter", "hero");
             PlayerPrefs.Save();
         }
     }

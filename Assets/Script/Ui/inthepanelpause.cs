@@ -41,7 +41,8 @@ public class inthepanelpause : MonoBehaviour {
                 panelpause.SetActive(true);
                 panelshowitem.SetActive(false);
                 //Playermuving.player.PauseGame();
-                Debug.Log(datatime);
+                //Debug.Log(datatime);
+                print(datatime);
                 if (Time.timeScale != 0)
                 {
                     datatime = Time.timeScale;
@@ -61,7 +62,8 @@ public class inthepanelpause : MonoBehaviour {
         showtextwhait.SetActive(true);
         Soundmanager.soundmanager.Continued();
         panelpause.SetActive(false);
-        Debug.Log(datatime);
+       // Debug.Log(datatime);
+        print(datatime);
         panelshowitem.SetActive(true);
         amindelay.SetBool("delay", false);
         playagain = true;

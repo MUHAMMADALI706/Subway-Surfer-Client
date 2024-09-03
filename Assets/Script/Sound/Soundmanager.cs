@@ -74,6 +74,10 @@ public class Soundmanager : MonoBehaviour {
             backgrod.GetComponent<AudioSource>().Pause();
         }
     }
+    public void StopBackgroundSound()
+    {
+        backgrod.GetComponent<AudioSource>().Stop();
+    }
     public static float pitchsound = 0.75f;
     /// <summary>
     /// mở nhạc cảnh sat đuổi theo

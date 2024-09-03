@@ -137,6 +137,14 @@ public class Playermuving : MonoBehaviour
                         giayrigh.transform.position = new Vector3(tagettranformgiayrightgau.position.x + 0.2f, tagettranformgiayrightgau.position.y, tagettranformgiayrightgau.position.z);
                         giayrigh.transform.parent = tagettranformgiayrightgau;
                         break;
+                    case "hero":
+                        playermodol = gameObject.transform.Find("hero").gameObject;
+                        giayleft.transform.position = new Vector3(tagettranformgiayleftgau.position.x + 0.1f, tagettranformgiayleftgau.position.y, tagettranformgiayleftgau.position.z - 0f);
+                        giayleft.transform.eulerAngles = new Vector3(tagettranformgiayleftgau.eulerAngles.x, giayleft.transform.eulerAngles.y, giayleft.transform.eulerAngles.z + 30);
+                        giayleft.transform.parent = tagettranformgiayleftgau;
+                        giayrigh.transform.position = new Vector3(tagettranformgiayrightgau.position.x + 0.2f, tagettranformgiayrightgau.position.y, tagettranformgiayrightgau.position.z);
+                        giayrigh.transform.parent = tagettranformgiayrightgau;
+                        break;
                     default:
                         break;
                 }
@@ -397,6 +405,7 @@ public void Getscore(float value)
                 if (coll.gameObject.tag == "die")
                 {
                     Soundmanager.soundmanager.PlayPoliceSound();
+                    Soundmanager.soundmanager.StopBackgroundSound();
 
                     if (Manageritem.baylongcoin == false && Manageritem.baycoin == false)
                     {
@@ -472,6 +481,7 @@ public void Getscore(float value)
                         if (emty.emtyplayer != null && emty.alowcallhere)
                         {
                             Soundmanager.soundmanager.PlayPoliceSound();
+                            Soundmanager.soundmanager.StopBackgroundSound();
                             if (Manageritem.van == false)
                             {
                                 emty.emtyplayer.startatact();

@@ -173,7 +173,7 @@ public class UImanager : MonoBehaviour {
             Time.timeScale = 0.8F;
             Playermuving.speedmuving = 15;
             inthepanelpause.playagain = true;
-            GoogleMobileAdsScript.Instance.showbaner();
+           // GoogleMobileAdsScript.Instance.showbaner();
             Playagainshowhide.gameObject.SetActive(false);
             calll = false;
             coin = 0;
@@ -200,6 +200,8 @@ public class UImanager : MonoBehaviour {
     IEnumerator  playagain()
     {
         Playermuving.isplay = true;
+        Soundmanager.soundmanager.PlayBackgroudSound();
+        Soundmanager.soundmanager.PlayPoliceSound();
         yield return new WaitForSeconds(0.5f);
         calll = true;
         Playermuving.player.clicontheplayagainseleckey();
@@ -274,7 +276,7 @@ public class UImanager : MonoBehaviour {
         yield return new WaitForSeconds(0.5f);
         Playermuving.isplay = true;
         Playermuving.speedmuving = 5;
-        GoogleMobileAdsScript.Instance.showbaner();
+        //GoogleMobileAdsScript.Instance.showbaner();
         if (PlayerPrefs.HasKey("hd") == false)
         {
             UIHowToPlay.SetActive(true);
@@ -605,7 +607,7 @@ public class UImanager : MonoBehaviour {
     public IEnumerator delayforAgain()
     {
         yield return new WaitForSeconds(0.25f);
-        panelseleckey.gameObject.SetActive(true);
+        //panelseleckey.gameObject.SetActive(true);
         showbane++;
         Manageritem.mngitem.DeleteAllItemWendie();
         if (checkthedie > 2)
@@ -663,11 +665,11 @@ public class UImanager : MonoBehaviour {
                 goodCPU.intance.GetStartrotay(false);
                 Camerafolow.camfolowplayer.gameObject.GetComponent<Camera>().farClipPlane = 3;
                 Playermuving.player.OurtCut();
-                GoogleMobileAdsScript.Instance.hidebaner();
+                //GoogleMobileAdsScript.Instance.hidebaner();
                 inthepanelpause.playagain = true;
                 if (showbane >= 2)
                 {
-                    GoogleMobileAdsScript.Instance.showfullbaner();
+                    //GoogleMobileAdsScript.Instance.showfullbaner();
                     showbane = 0;
                 }
                  if (selectkey == false)
@@ -771,7 +773,7 @@ public class UImanager : MonoBehaviour {
                 managerdata.manager.savemuving(coinmuving);
             }
             add = 1;
-            fb.checkloging.checkLogin(); 
+            //fb.checkloging.checkLogin(); 
         }
         else if (showthenewsocore)
         {
@@ -863,7 +865,7 @@ public class UImanager : MonoBehaviour {
         {
             managerdata.manager.savemuving(coinmuving);
         }
-        fb.checkloging.checkLogin(); // kieemr tra menu facebook
+       //fb.checkloging.checkLogin(); // kieemr tra menu facebook
        //;
     }
     /// <summary>
@@ -1024,13 +1026,13 @@ public class UImanager : MonoBehaviour {
     /// </summary>
     public void gotohome()
     {
-        GoogleMobileAdsScript.Instance.hidebaner();
+        //GoogleMobileAdsScript.Instance.hidebaner();
         Time.timeScale = 1;
         IkEmty.iklegth1 = 0;
         IkEmty.iklegth = 0;
         IKanimation.iklegth = 0;
         Playermuving.backnowmuvingship = true;
-        Application.LoadLevel("mainlv");
+        Application.LoadLevel("game");
     }
 
 

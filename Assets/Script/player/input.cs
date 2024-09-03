@@ -33,7 +33,7 @@ public class input : MonoBehaviour {
                 {
                     if (Input.mousePosition.y > (Screen.height*0.84) && Input.mousePosition.y < (Screen.height*0.91f))
                     {
-                        Debug.Log("ok");
+                    print("ok");
                     }
                 }
 

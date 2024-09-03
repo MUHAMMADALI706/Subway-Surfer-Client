@@ -22,7 +22,7 @@ public class IkEmty : MonoBehaviour {
             case "nvchinh":
                 maintaget = positionmangnetl;
                 break;
-            case "nvgirl":
+            case "hero":
                 maintaget = positionmangnetlgirl;
                 break;
             case "nvgau":

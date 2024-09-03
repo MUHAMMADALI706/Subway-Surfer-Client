@@ -91,48 +91,49 @@ public class BuyADS : MonoBehaviour {
     }
     IEnumerator checkInternetConnection(string Geturl)
     {
+        yield return null;
       
-        WWW www = new WWW("http://google.com");
-        yield return www;
-        if (www.error != null)
-        {
-            //if (amin != null)
-            //{
-            //    amin.StartPlayback();
-            //    amin.enabled = false;
-            //}
-            if (showbtnss != null)
-                showbtnss.transform.position = new Vector3(showbtnss.transform.position.x, Screen.height + Screen.height / 10, showbtnss.transform.position.z);
-            //if (aminnotinternet != null)
-            //{
-            //    aminnotinternet.enabled = false;
-            //}
-            //if (showbtnssnotinternet != null)
-            //{
-            //    showbtnssnotinternet.transform.position = new Vector3(showbtnss.transform.position.x, Screen.height + Screen.height / 10, showbtnss.transform.position.z);
-            //}
-            aminnotinternet.Play("open");
-            yield return new WaitForSeconds(0.5f);
-            aminnotinternet.enabled = true;
-            yield return new WaitForSeconds(1.5f);
-            aminnotinternet.SetBool("open", true);
-            yield return new WaitForSeconds(1.5f);
-            aminnotinternet.SetBool("open", false);
-            //aminnotinternet.Stop();
-            aminnotinternet.enabled = false;
-            aminnotinternet.enabled = false;
-        }
-        else {
-            if (continuedjumptolink)
-            {
-                continuedjumptolink = false;
-                Application.OpenURL(Geturl);
-                StartCoroutine(delayjumtolink());
-                yield return new WaitForSeconds(3f);
-            }
-        }
-        continuedjumptolink = true;
-        alow = true;
+        //WWW www = new WWW("http://google.com");
+        //yield return www;
+        //if (www.error != null)
+        //{
+        //    //if (amin != null)
+        //    //{
+        //    //    amin.StartPlayback();
+        //    //    amin.enabled = false;
+        //    //}
+        //    if (showbtnss != null)
+        //        showbtnss.transform.position = new Vector3(showbtnss.transform.position.x, Screen.height + Screen.height / 10, showbtnss.transform.position.z);
+        //    //if (aminnotinternet != null)
+        //    //{
+        //    //    aminnotinternet.enabled = false;
+        //    //}
+        //    //if (showbtnssnotinternet != null)
+        //    //{
+        //    //    showbtnssnotinternet.transform.position = new Vector3(showbtnss.transform.position.x, Screen.height + Screen.height / 10, showbtnss.transform.position.z);
+        //    //}
+        //    aminnotinternet.Play("open");
+        //    yield return new WaitForSeconds(0.5f);
+        //    aminnotinternet.enabled = true;
+        //    yield return new WaitForSeconds(1.5f);
+        //    aminnotinternet.SetBool("open", true);
+        //    yield return new WaitForSeconds(1.5f);
+        //    aminnotinternet.SetBool("open", false);
+        //    //aminnotinternet.Stop();
+        //    aminnotinternet.enabled = false;
+        //    aminnotinternet.enabled = false;
+        //}
+        //else {
+        //    if (continuedjumptolink)
+        //    {
+        //        continuedjumptolink = false;
+        //        Application.OpenURL(Geturl);
+        //        StartCoroutine(delayjumtolink());
+        //        yield return new WaitForSeconds(3f);
+        //    }
+        //}
+        //continuedjumptolink = true;
+        //alow = true;
     }
     string valuecoin;
     int valuecoinint;
@@ -202,29 +203,29 @@ public class BuyADS : MonoBehaviour {
 
     IEnumerator checkInternetConnection()
     {
-        WWW www = new WWW("http://google.com");
-        yield return www;
-        if (www.error != null)
+        //WWW www = new WWW("http://google.com");
+        yield return null;
+        if (true)//www.error != null)
         {
-            aminnotinternet.Play("open");
-            yield return new WaitForSeconds(0.5f);
-            aminnotinternet.enabled = true;
-            yield return new WaitForSeconds(1.5f);
-            aminnotinternet.SetBool("open", true);
-            yield return new WaitForSeconds(1.5f);
-            aminnotinternet.SetBool("open", false);
-            //aminnotinternet.Stop();
-            aminnotinternet.enabled = false;
-            aminnotinternet.enabled = false;
+            //aminnotinternet.Play("open");
+            //yield return new WaitForSeconds(0.5f);
+            //aminnotinternet.enabled = true;
+            //yield return new WaitForSeconds(1.5f);
+            //aminnotinternet.SetBool("open", true);
+            //yield return new WaitForSeconds(1.5f);
+            //aminnotinternet.SetBool("open", false);
+            ////aminnotinternet.Stop();
+            //aminnotinternet.enabled = false;
+            //aminnotinternet.enabled = false;
         }
         else {
 
-            if (GoogleMobileAdsScript.Instance.ADS_Video_GetIsloaded())
-            {
+            //if (GoogleMobileAdsScript.Instance.ADS_Video_GetIsloaded())
+            //{
               
-                GoogleMobileAdsScript.Instance.showvideo();
-                StartCoroutine(delayshow());
-            }
+            //    GoogleMobileAdsScript.Instance.showvideo();
+            //    StartCoroutine(delayshow());
+            //}
 
         }
     }
@@ -259,28 +260,29 @@ public class BuyADS : MonoBehaviour {
         }
     IEnumerator checkInternetConnectionAnimation(string value)
     {
-        WWW www = new WWW("http://google.com");
-        yield return www;
-        if (www.error != null)
-        {
+        yield return null;
+        //WWW www = new WWW("http://google.com");
+        //yield return www;
+        //if (www.error != null)
+        //{
            
-        }
-        else {
-            if (value == "Get 3 keys")
-            {
-                if (GoogleMobileAdsScript.Instance.ADS_Video_GetIsloaded())
-                {
-                    StartCoroutine(StartAnimationdelay(value));
-                }
-            }
-            else
-            {
-                if (GoogleMobileAdsScript.Instance.ADS_Video_GetIsloaded())
-                {
-                    StartCoroutine(StartAnimationdelay(value));
-                }
-            }
-        }
+        //}
+        //else {
+            //if (value == "Get 3 keys")
+            //{
+            //    if (GoogleMobileAdsScript.Instance.ADS_Video_GetIsloaded())
+            //    {
+            //        StartCoroutine(StartAnimationdelay(value));
+            //    }
+            //}
+            //else
+            //{
+            //    if (GoogleMobileAdsScript.Instance.ADS_Video_GetIsloaded())
+            //    {
+            //        StartCoroutine(StartAnimationdelay(value));
+            //    }
+            //}
+        //}
     }
     public GameObject shopearm;
     bool alow = true;
@@ -362,17 +364,17 @@ public class BuyADS : MonoBehaviour {
     public Text GetEarm;
   public  void Showbtn()
     {
-        if (fb.checkloging !=null)
-        {
-            if (fb.checkloging.WhatIsLoggerIn())
-            {
-                GetEarm.text = "You Got";
-            }
-            else
-            {
-                GetEarm.text = "Log to get coin";
-            }
-        }
+        //if (fb.checkloging !=null)
+        //{
+        //    if (fb.checkloging.WhatIsLoggerIn())
+        //    {
+        //        GetEarm.text = "You Got";
+        //    }
+        //    else
+        //    {
+        //        GetEarm.text = "Log to get coin";
+        //    }
+        //}
       
     }
     public GameObject showinfor;
@@ -423,9 +425,9 @@ public class BuyADS : MonoBehaviour {
         {
             aminnotinternet.enabled = false;
         }
-        if (showbtnssnotinternet != null)
-        {
-            showbtnssnotinternet.transform.position = new Vector3(showbtnss.transform.position.x, Screen.height + Screen.height / 10, showbtnss.transform.position.z);
-        }
+        //if (showbtnssnotinternet != null)
+        //{
+        //    showbtnssnotinternet.transform.position = new Vector3(showbtnss.transform.position.x, Screen.height + Screen.height / 10, showbtnss.transform.position.z);
+        //}
 }
 }

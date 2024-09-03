@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: 1ab0ad752d901994f8c5c9097a66ea8d
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #104
+    second: {fileID: 2100000, guid: 35302136e71da6543b75fe9b5d800cda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #105
+    second: {fileID: 2100000, guid: 834378596df6a15448c782061c525635, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #115
+    second: {fileID: 2100000, guid: 28a56be092a949b45b82d2c64b7da468, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #124
+    second: {fileID: 2100000, guid: c90458481e8d1964aa6725d6a1d5701d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #126
+    second: {fileID: 2100000, guid: c6bc6b820004a4444babe2ce07d026dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #127
+    second: {fileID: 2100000, guid: 9c0576b63228c5e40829760fac30277f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #128
+    second: {fileID: 2100000, guid: 57f78c6bcbc017443b85b30d8626ecf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #129
+    second: {fileID: 2100000, guid: 448118af096162a4e90dc5ffe9ea7a2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #133
+    second: {fileID: 2100000, guid: b6172d3d07822744daf5a5f10bb365bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #134
+    second: {fileID: 2100000, guid: 4c0fa1eef0188384298fffdebf8d0905, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #53
+    second: {fileID: 2100000, guid: 7c44426d68a79a244af4d44ef3accfc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #54
+    second: {fileID: 2100000, guid: 05e0aa9fe9cac37449905d0c0b0cfbde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #58
+    second: {fileID: 2100000, guid: 9cedace32b2eab74fabc2c3bc4531c98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #72
+    second: {fileID: 2100000, guid: e7b718f5f03566b448f227fd220b0db9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #75
+    second: {fileID: 2100000, guid: 9806f633582d88948a7c8246b8e6e423, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #85
+    second: {fileID: 2100000, guid: 7a8d57b40ee7371429d81f3d083dbc8a, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftLowerLeg' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: ORK_Ctrl_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ORK_Ctrl_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ORK_Ctrl_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ORK_Ctrl_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: fbx hero(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toga_parts4
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.73635226}
+      rotation: {x: 7.303399e-17, y: 0.976296, z: 7.303399e-17, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: botle_glass
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.73635226}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: eyes2
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.73635226}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: head_mesh1
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.73635226}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: Weapons_3_1.001
+      parentName: fbx hero(Clone)
+      position: {x: -0.34163108, y: -6.7377687, z: 1.3488084}
+      rotation: {x: -0.21842161, y: 0.9572758, z: -0.18914826, w: 0.01175054}
+      scale: {x: 20.759197, y: 20.759195, z: 20.759197}
+    - name: Body_1_1
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.7363522}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: acessories.001
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.7363522}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: eyes1
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.73635226}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_Neck
+      parentName: fbx hero(Clone)
+      position: {x: 2.1342208, y: -5.1050406, z: 0.7887272}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_RightArm
+      parentName: fbx hero(Clone)
+      position: {x: 1.7510644, y: -5.2377696, z: 1.0460361}
+      rotation: {x: -0.0000029164526, y: 0.9762951, z: -0.0000031188133, w: -0.21644378}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_RightForeArm
+      parentName: ORK_Ctrl_RightArm
+      position: {x: 0.6309523, y: -0.5144891, z: -0.014390691}
+      rotation: {x: -0.000003992395, y: -0.000001005828, z: 0.0000037861819, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORK_Ctrl_LeftArm
+      parentName: fbx hero(Clone)
+      position: {x: 2.5776174, y: -5.2377696, z: 0.66060764}
+      rotation: {x: 0.000001201331, y: 0.97629714, z: -0.000004060124, w: -0.21643454}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_LeftForeArm
+      parentName: ORK_Ctrl_LeftArm
+      position: {x: -0.6309522, y: -0.5144899, z: -0.014390691}
+      rotation: {x: -0.0000030915646, y: 0.0000065099453, z: -0.0000013880714, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORK_Ctrl_RightFoot
+      parentName: fbx hero(Clone)
+      position: {x: 1.612134, y: -8.159383, z: 1.08747}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_RightToeBase
+      parentName: ORK_Ctrl_RightFoot
+      position: {x: 0.1543292, y: -0.12684265, z: 0.41807398}
+      rotation: {x: 1.7763568e-15, y: 2.2284966e-16, z: 0.00000008742278, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORK_Ctrl_LeftFoot
+      parentName: fbx hero(Clone)
+      position: {x: 2.6986616, y: -8.159388, z: 0.5808157}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_LeftToeBase
+      parentName: ORK_Ctrl_LeftFoot
+      position: {x: -0.15432915, y: -0.12684265, z: 0.4180741}
+      rotation: {x: 3.5527137e-15, y: 1.03358084e-16, z: 0.00000008742278, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORK_Ctrl_Hips
+      parentName: fbx hero(Clone)
+      position: {x: 2.109798, y: -6.5122194, z: 0.7363523}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_LeftUpLeg
+      parentName: ORK_Ctrl_Hips
+      position: {x: -0.24470317, y: -0.2751867, z: 0.007873356}
+      rotation: {x: 0.0000033851322, y: -0.00000009793183, z: 0.000000030451577, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORK_Ctrl_RightUpLeg
+      parentName: ORK_Ctrl_Hips
+      position: {x: 0.24470308, y: -0.2751867, z: 0.007873356}
+      rotation: {x: -0.000007975781, y: -0.0000014735895, z: 0.000000535032, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORK_Ctrl_Spine
+      parentName: ORK_Ctrl_Hips
+      position: {x: -0, y: 0.1778, z: 0.00000009689331}
+      rotation: {x: 0, y: -6.617445e-24, z: 6.6174445e-24, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORK_Ctrl_RightHipEffector
+      parentName: fbx hero(Clone)
+      position: {x: 1.8673646, y: -6.808592, z: 0.8400452}
+      rotation: {x: 0.000002191595, y: 0.9762963, z: 0.0000076553815, w: -0.21643819}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_LeftHipEffector
+      parentName: fbx hero(Clone)
+      position: {x: 2.3450634, y: -6.808592, z: 0.6172904}
+      rotation: {x: -0.0000007205161, y: 0.97629607, z: -0.000003250042, w: -0.21643935}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_RightShoulderEffector
+      parentName: fbx hero(Clone)
+      position: {x: 1.751066, y: -5.237772, z: 1.0460348}
+      rotation: {x: -0.68929505, y: 0.6892964, z: 0.1577036, w: -0.15770975}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: ORK_Ctrl_LeftShoulderEffector
+      parentName: fbx hero(Clone)
+      position: {x: 2.5776174, y: -5.237772, z: 0.66060764}
+      rotation: {x: -0.69014376, y: 0.6901451, z: 0.15394743, w: -0.15395322}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_RightFootEffector
+      parentName: fbx hero(Clone)
+      position: {x: 1.2712098, y: -8.29599, z: 0.74964076}
+      rotation: {x: 0.15304583, y: -0.6903455, z: 0.6903455, w: 0.153046}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_LeftFootEffector
+      parentName: fbx hero(Clone)
+      position: {x: 2.6590095, y: -8.295997, z: 0.10249922}
+      rotation: {x: 0.15304583, y: -0.6903455, z: 0.6903455, w: 0.153046}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_ChestEndEffector
+      parentName: fbx hero(Clone)
+      position: {x: 2.1643414, y: -5.2377753, z: 0.8533217}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_ChestOriginEffector
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097972, y: -6.3207345, z: 0.73635304}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_RightAnkleEffector
+      parentName: fbx hero(Clone)
+      position: {x: 1.6121341, y: -8.159383, z: 1.0874703}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_LeftAnkleEffector
+      parentName: fbx hero(Clone)
+      position: {x: 2.6986609, y: -8.159388, z: 0.58081406}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: ORK_Ctrl_HipsEffector
+      parentName: fbx hero(Clone)
+      position: {x: 2.1062136, y: -6.808592, z: 0.72866803}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076982, y: 1.076982, z: 1.076982}
+    - name: Armor_base
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.73635226}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: Toga_parts6
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.73635226}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: leggs_9_1
+      parentName: fbx hero(Clone)
+      position: {x: 2.1106982, y: -9.247756, z: 0.7359319}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: handsArmor_1_1
+      parentName: fbx hero(Clone)
+      position: {x: 2.1059551, y: -9.247756, z: 0.7381436}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: Toga_parts8
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.7363522}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: Toga_parts
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.7363522}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: helm_6_1
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.73635226}
+      rotation: {x: -4.6527784e-17, y: 0.976296, z: 4.6527784e-17, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    - name: shoulders_6_1
+      parentName: fbx hero(Clone)
+      position: {x: 2.1097968, y: -9.247756, z: 0.7363522}
+      rotation: {x: 0.000000028820677, y: 0.976296, z: 0.00000013000168, w: -0.21643962}
+      scale: {x: 1.076983, y: 1.076983, z: 1.076983}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
