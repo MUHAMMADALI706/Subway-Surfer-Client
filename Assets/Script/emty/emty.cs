@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class emty : MonoBehaviour {
     public Animator amin;
@@ -10,7 +11,8 @@ public class emty : MonoBehaviour {
     public GameObject con;
     public GameObject playertaget;
     public Transform taget;
-    public static bool alowcallhere; 
+    public static bool alowcallhere;
+    public bool end;
                                      
     void Start () {
         emtyplayer = this;
@@ -43,7 +45,7 @@ public class emty : MonoBehaviour {
     }
     public void actacisfolowplayer()
     {
-        amin.SetBool("play", true);
+        //amin.SetBool("play", true);
     }
 
     /// <summary>
@@ -53,7 +55,7 @@ public class emty : MonoBehaviour {
     public IEnumerator  intheplay()
     {
         con.SetActive(true);
-        amin.SetBool("play", true);
+        //amin.SetBool("play", true);
         for (int i = 0; i < 100; i++)
         {
             yield return new WaitForSeconds(0.0001f);
@@ -82,8 +84,9 @@ public class emty : MonoBehaviour {
             folow.distance -= 0.2f;
            
         }
-        amin.SetBool("play",true);
-      //  amin.SetBool("cut", false);
+        //amin.SetBool("play",true);
+
+      ////  amin.SetBool("cut", false);
        
         isfolowplayer = true;
         for (int i = 0; i < 32; i++)
@@ -147,7 +150,8 @@ public class emty : MonoBehaviour {
         die++;
         if (die == 2)
         {
-           // enterthedie
+            // enterthedie
+            
                OnanimationCash();
             Camerafolow.isdowham = false; // suwar camera
             if (Manageritem.van ==false)
@@ -165,10 +169,12 @@ public class emty : MonoBehaviour {
             }
         }
     }
-
     public void OnanimationCash()
     {
-        amin.SetBool("cut", true); 
+        //amin.SetBool("cut", true); 
+        end = true;
+        amin.SetBool("end",true);
+        amin.SetBool("start", false);
         Playermuving.player.StartCoroutine(Playermuving.player.OntheCasth());
         if (Playermuving.player.gameObject.transform.position.x<=-2)
         {
@@ -200,14 +206,22 @@ public class emty : MonoBehaviour {
     /// </summary>
     public void ResutTranformemty()
     {
+        amin.SetBool("end", false);
+        amin.SetBool("start",true);
+        Invoke("OffAnimation", 0.2f);
+        print("PLAY");
+        end = false;
         folow.distance = 10;
         IkEmty.iklegth = 0;
         IkEmty.iklegth1 = 0;
         folow.height1 = 0;
         transform.eulerAngles = new Vector3(0, 0, 0);
-        amin.SetBool("cut", false);  // chạy animation bắt túm lấy nhân vật chính
+        //amin.SetBool("cut", false);  // chạy animation bắt túm lấy nhân vật chính
     }
-
+    void OffAnimation()
+    {
+        amin.SetBool("start", false);
+    }
 
     /// <summary>
     /// thoát hết trạng thái  khi có item
@@ -231,23 +245,27 @@ public class emty : MonoBehaviour {
             }
             if (transform.position.z >= playertaget.transform.position.z - 2f)
             {
-                amin.SetBool("play", false);
+                //amin.SetBool("play", false);
                 isactac = false;
             }
         }
-       
-	}
+        if (end)
+        {
+            transform.LookAt(playertaget.transform);
+        }
+
+    }
 
     /// <summary>
     /// set animation nhảy lên
     /// </summary>
     public void jump()
     {
-        amin.SetBool("jump", true);
+        //amin.SetBool("jump", true);
     }
     public void ExitJump()
     {
-        amin.SetBool("jump", false);
+        //amin.SetBool("jump", false);
     }
    
     public void OnthePause()
