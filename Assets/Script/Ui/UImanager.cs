@@ -1644,14 +1644,14 @@ public class UImanager : MonoBehaviour {
                     gettex.text = "000";
                 }
 
-                if (Time.timeScale <= 1.1f)
-                {
-                    if (coinmuving > coinforuplv)
-                    {
-                        coinforuplv = coinforuplv * 2;
-                        Time.timeScale += 0.05f;
-                    }
-                }
+                //if (Time.timeScale <= 1.1f)
+                //{
+                //    if (coinmuving > coinforuplv)
+                //    {
+                //        coinforuplv = coinforuplv * 2;
+                //        Time.timeScale += 0.05f;
+                //    }
+                //}
             }
  
         }

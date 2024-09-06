@@ -31,25 +31,28 @@ public class inthepanelpause : MonoBehaviour {
     /// </summary>
     public void pause()
     {
-        if (Playermuving.speedmuving > 10)
-        {
-            if (Delaystart.delaysecons == 3)
-            {
-                // evensystem.SetActive(true);
-                autoscale.atsc.toscale();
-                Soundmanager.soundmanager.Pause();
-                panelpause.SetActive(true);
-                panelshowitem.SetActive(false);
-                //Playermuving.player.PauseGame();
-                //Debug.Log(datatime);
-                print(datatime);
-                if (Time.timeScale != 0)
-                {
-                    datatime = Time.timeScale;
-                }
-                Time.timeScale = 0;
-            }
-        }
+        Time.timeScale = 0;
+        panelpause.SetActive(true);
+        panelshowitem.SetActive(false);
+        //if (Playermuving.speedmuving > 10)
+        //{
+        //    if (Delaystart.delaysecons == 3)
+        //    {
+        //        // evensystem.SetActive(true);
+        //        autoscale.atsc.toscale();
+        //        Soundmanager.soundmanager.Pause();
+        //        panelpause.SetActive(true);
+        //        panelshowitem.SetActive(false);
+        //        //Playermuving.player.PauseGame();
+        //        //Debug.Log(datatime);
+        //        print(datatime);
+        //        if (Time.timeScale != 0)
+        //        {
+        //            datatime = Time.timeScale;
+        //        }
+        //        Time.timeScale = 0;
+        //    }
+        //}
     }
 
     public static bool fixFlylong = false;
@@ -59,15 +62,18 @@ public class inthepanelpause : MonoBehaviour {
     /// </summary>
     public void Resume()
     {
-        showtextwhait.SetActive(true);
-        Soundmanager.soundmanager.Continued();
+        Time.timeScale = 1;
         panelpause.SetActive(false);
-       // Debug.Log(datatime);
-        print(datatime);
         panelshowitem.SetActive(true);
-        amindelay.SetBool("delay", false);
-        playagain = true;
-        isclic = true;
+        // showtextwhait.SetActive(true);
+        // Soundmanager.soundmanager.Continued();
+        // panelpause.SetActive(false);
+        //// Debug.Log(datatime);
+        // print(datatime);
+        // panelshowitem.SetActive(true);
+        // amindelay.SetBool("delay", false);
+        // playagain = true;
+        // isclic = true;
     }
     public Animator amindelay;
     public Text delaysecon;
