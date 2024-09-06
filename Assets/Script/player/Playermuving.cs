@@ -481,7 +481,7 @@ public void Getscore(float value)
                         if (emty.emtyplayer != null && emty.alowcallhere)
                         {
                             Soundmanager.soundmanager.PlayPoliceSound();
-                            Soundmanager.soundmanager.StopBackgroundSound();
+                            //Soundmanager.soundmanager.StopBackgroundSound();
                             if (Manageritem.van == false)
                             {
                                 emty.emtyplayer.startatact();
