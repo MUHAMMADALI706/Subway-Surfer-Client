@@ -21,7 +21,7 @@ public class managerdata : MonoBehaviour {
         loaditemvan();
         Datacharacter();
         PlayerPrefs.Save();
-        PlayerPrefs.SetInt("coinmuving", 0);
+        //PlayerPrefs.SetInt("coinmuving", 0);
         PlayerPrefs.Save();
     }
 
@@ -571,7 +571,9 @@ public class managerdata : MonoBehaviour {
     {
         if (maxmuving >PlayerPrefs.GetInt("coinmuving"))
         {
+          // print("saving score " + maxmuving);
             PlayerPrefs.SetInt("coinmuving", maxmuving);
+           // print("saved pref score " + PlayerPrefs.GetInt("coinmuving"));
             PlayerPrefs.Save();
         }
     }
@@ -584,6 +586,7 @@ public class managerdata : MonoBehaviour {
     /// <returns></returns>
     public int getmuving()
     {
+        //print("get score " + PlayerPrefs.GetInt("coinmuving"));
         return PlayerPrefs.GetInt("coinmuving");
     }
  

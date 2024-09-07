@@ -62,7 +62,7 @@ public class inthepanelpause : MonoBehaviour {
     /// </summary>
     public void Resume()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 0.8f;
         panelpause.SetActive(false);
         panelshowitem.SetActive(true);
         // showtextwhait.SetActive(true);

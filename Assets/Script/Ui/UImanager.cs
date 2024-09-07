@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.Rendering;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 /// <summary>
 /// class quản lý taonf bộ hệ thống menu Ui vật phẩm và dữ liệu
 /// </summary>
@@ -73,6 +74,9 @@ public class UImanager : MonoBehaviour {
     public Text ShowHighscor3D;
     // Use this for initialization
     public int frameRate = 60;
+
+    public GameObject enterNamePanel;
+    public TMP_InputField enteredName;
     void Awake()
     {
         //yourcoinnow.transform.SetSiblingIndex(1);
@@ -567,6 +571,7 @@ public class UImanager : MonoBehaviour {
       
         if (coinmuving > managerdata.manager.getmuving())
         {
+            print("current " + coinmuving + " old " + managerdata.manager.getmuving());
             newsoccoretxt.text = coinmuving.ToString();
             showthenewsocore = true;
         }
@@ -756,6 +761,8 @@ public class UImanager : MonoBehaviour {
     /// <returns></returns>
     private IEnumerator playopenmenumainsocore()
     {
+        Leaderboard.Instance.OnLeaderBoad();
+        //print(showthenewsocore);
         if (showthenewsocore == false)
         {
             Playermuving.isplay = false;
@@ -793,8 +800,25 @@ public class UImanager : MonoBehaviour {
     }
     public void tabtabcontinued()
     {
-        StartCoroutine(taptocontinuedinthenewsocore());
+        if (PlayerPrefs.HasKey("PlayerName"))
+        {
+            StartCoroutine(taptocontinuedinthenewsocore());
+        }
+        else
+        {
+            enterNamePanel.SetActive(true);
+        }
+        //StartCoroutine(taptocontinuedinthenewsocore());
     }
+    public void SaveUserName()
+    {
+        if (enteredName.text.Length > 0)
+        {
+            PlayerPrefs.SetString("PlayerName", enteredName.text);
+            StartCoroutine(taptocontinuedinthenewsocore());
+        }
+    }
+
     public void GetAllValueToPanelCoinLost()
     {
         yourcoin.text = managerdata.manager.Getcoin().ToString();
@@ -851,6 +875,7 @@ public class UImanager : MonoBehaviour {
         opennewHideSocore.gameObject.SetActive(false);
         newcoinmaxmung.gameObject.SetActive(false);
         panellost.gameObject.SetActive(true);
+       // Leaderboard.Instance.OnLeaderBoad();
        // showPlayeronlost.SetActive(true);
         yield return new WaitForSeconds(1);
         yourcoinmuving.text = managerdata.manager.getmuving().ToString(); // đường đi max
